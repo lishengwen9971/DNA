@@ -18,7 +18,7 @@ from utils.eval import predict
 from utils import globalvar as gl
 # import dataloader as dir_dataloader
 parser = argparse.ArgumentParser(description='UDA Classification')
-parser.add_argument('--root_dir', type=str, default='/home/lishengwen/data/OfficeHome',
+parser.add_argument('--root_dir', type=str, default='/home/data/OfficeHome',
                     help='root dir of the dataset')     
 parser.add_argument('--dataset', type=str, default='OfficeHome',
                     help='the name of dataset')
@@ -110,10 +110,10 @@ torch.cuda.manual_seed_all(seed)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
-record_dir = 'record_UDA/{}/{}'.format(str.upper(args.dataset), str.upper(args.net))
+record_dir = '/home/code/DNA-main/record_UDA/{}/{}'.format(str.upper(args.dataset), str.upper(args.net))
 if not os.path.exists(record_dir):
     os.makedirs(record_dir)
-check_path = '/home/lishengwen/code/DNA-main/save_model_UDA/{}/{}'.format(str.upper(args.dataset), str.upper(args.net))
+check_path = '/home/code/DNA-main/save_model_UDA/{}/{}'.format(str.upper(args.dataset), str.upper(args.net))
 # check_path = 'save_parallel_model_UDA/{}/{}'.format(str.upper(args.dataset), str.upper(args.net))
 if not os.path.exists(check_path):
     os.makedirs(check_path)
