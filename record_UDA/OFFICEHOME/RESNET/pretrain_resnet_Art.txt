@@ -28,9 +28,3 @@ Epoch 27 acc_tar 99.6292
 Epoch 28 acc_tar 99.6292
 Epoch 29 acc_tar 99.6292
 Epoch 30 acc_tar 99.6292
-Epoch 1 acc_tar 81.6646
-Epoch 2 acc_tar 94.7672
-Epoch 1 acc_tar 81.6646
-Epoch 1 acc_tar 81.6646
-Epoch 2 acc_tar 94.7672
-Epoch 3 acc_tar 98.7639
